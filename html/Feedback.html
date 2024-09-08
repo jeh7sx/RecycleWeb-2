@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="shortcut icon" type="imagex/png" href="../img/leaf-solid.svg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Feedback</title>
+    
+<!--Links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/site.css">
+    <!--Fim links -->
+
+    <!--Jquery-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+   <!--Floating WhatsApp javascript-->
+    <script type="text/javascript" src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js"></script>
+    
+</head>
+
+<body>
+
+  
+  <!-- Nav Bar -->
+
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+          <div class="container-fluid">
+              <a class="navbar-brand" href="home.html"><i class="fa-solid fa-leaf fa-lg" style="color: #27AE60;"></i></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="mynavbar">
+                  <ul class="navbar-nav me-auto">
+                      <li class="nav-item">
+                          <a class="nav-link" href="parceiros.html">Apoiadores</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="Feedback.html">FAQ</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="saibamais.html">Saiba Mais</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+  </header>
+<!-- fim Nav bar-->
+ <h1 style="text-align: center; font-size: 50px; color: aliceblue;">Envie sua opnião!</h1>
+<!--Codigo Novo-->
+<div class="w-75 m-auto mt-5" >
+<div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <!-- colocar style
+   
+  
+  
+  
+  
+  -->
+  <div class="carousel-inner" style="max-width: 100%; max-height: 100%;" >
+    <div class="carousel-item active" >
+      <video class="d-block w-100" autoplay loop muted>
+        <source src="../img/pexels-julia-m-cameron-6894191 (2160p) (1).mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="carousel-item">
+      <video class="d-block w-100" autoplay loop muted>
+        <source src="../img/video (1080p).mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="carousel-item">
+      <video class="d-block w-100" autoplay loop muted>
+        <source src="../img/video (2160p).mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+<!--Codigo Novo-->
+
+
+ <!--comentario-->
+
+
+     
+     <div class="comentario">
+      <h2 >Deixe seu feedback</h2>
+
+      <input type="text" id="meuInput" placeholder="Digite algo..." >
+
+      
+
+     <button onclick="adicionarItem()" type="submit">Enviar</button>
+
+     </div>
+  
+
+     
+ 
+ 
+ 
+
+
+
+
+ <!--Final comentario-->
+    </div>
+
+       
+        <!-- Whatsapp -->
+     <div id="WAButton" class="whats" >
+   
+     </div>
+ 
+     <button id="button" type="button"  class="b3" data-bs-toggle="modal" data-bs-target="#exampleModal" >$ </button>
+
+     <!-- Modal -->
+     <div
+     class="modal fade"
+     id="exampleModal"
+     tabindex="-1"
+     aria-labelledby="exampleModalLabel"
+     aria-hidden="true">      
+     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+       <div class="modal-content">
+         <div class="modal-header">
+           <h1 class="modal-title fs-5" id="exampleModalLabel">
+             Junte-se a RecycleWeb para preservar o planeta através da
+             reciclagem. Faça sua doação!
+           </h1>
+           <button
+             type="button"
+             class="btn-close"
+             data-bs-dismiss="modal"
+             aria-label="Close"
+           ></button>
+         </div>
+         <div class="modal-body">
+           <h2 class="fs-5">Escolha a empresa para qual quer doar:</h2>
+           <select name="cars" id="cars" required>
+             <option value="Terracycle">Escolha...</option>
+             <option value="Terracycle" autocomplete="off">
+               Terracycle
+             </option>
+             <option value="GloLitter" autocomplete="off">GloLitter</option>
+             <option value="Ecopatas" autocomplete="off">
+               Ecopatas
+             </option>
+             <option value="Recicleiros" autocomplete="off">Recicleiros</option>
+           </select>
+           <hr />
+           <h2 class="fs-5">Escolha a quantia a ser doada:</h2>
+           <div class="form-check form-check-inline">
+             <input
+               class="form-check-input"
+               type="radio"
+               name="inlineRadioOptions"
+               id="inlineRadio1"
+               value="option1"
+               autocomplete="off"
+             />
+             <label class="form-check-label" for="inlineRadio1">R$ 10</label>
+           </div>
+           <div class="form-check form-check-inline">
+             <input
+               class="form-check-input"
+               type="radio"
+               name="inlineRadioOptions"
+               id="specifyColor"
+               value="option2"
+               autocomplete="off"
+             />
+             <label class="form-check-label" for="inlineRadio2">R$ 50</label>
+           </div>
+           <div class="form-check form-check-inline">
+             <input
+               class="form-check-input"
+               type="radio"
+               name="inlineRadioOptions"
+               id="specifyColor"
+               value="option3"
+               autocomplete="off"
+               checked
+             />
+             <label class="form-check-label" for="inlineRadio3">R$ 200</label>
+           </div>
+           <a
+             href="#"
+             data-bs-toggle="tooltip"
+             title="Tooltip"
+             class="linkverde"
+             >Doar outro valor</a
+           >
+           <hr />
+           <h2 class="fs-5">Escolha a frequência de doação:</h2>
+           <input
+             type="radio"
+             class="btn-check"
+             name="options"
+             id="option2"
+             autocomplete="off"
+             checked
+           />
+           <label class="btn btn-primary" for="option2">MENSAL</label>
+
+           <input
+             type="radio"
+             class="btn-check"
+             name="options"
+             id="option3"
+             autocomplete="off"
+           />
+           <label class="btn btn-primary" for="option3">ANUAL</label>
+           <hr />
+           <p>
+             Ao fazer uma doação para apoiar a reciclagem e a preservação
+             ambiental por meio do RecycleWeb, você concorda com os
+             <a href="#" data-bs-toggle="tooltip" title="Tooltip"
+               >termos e condições</a
+             >.
+           </p>
+         </div>
+         <div class="modal-footer">
+           <button
+             type="button"
+             class="btn btn-secondary"
+             data-bs-dismiss="modal"
+           >
+             Fechar
+           </button>
+           <button type="button" class="btn btn-primary">Fazer doação</button>
+         </div>
+       </div>
+     </div>
+
+
+ 
+     <script> $(function() {
+      // SETUP
+      var $span ; 
+      $span = $(' #button, #WAButton');  
+                
+      $('#button, #WAButton').hide().each(function(index) { 
+        $(this).delay(450 * index).fadeIn(1600); 
+      });
+  });
+  </script>
+
+    <script src="../js/index.js"></script>
+ <!--efeitos animações JS-->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
+  </body>
+
+</html>
